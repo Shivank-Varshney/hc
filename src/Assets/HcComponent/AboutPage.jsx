@@ -1,11 +1,13 @@
 import React from "react";
 import { NavHashLink } from 'react-router-hash-link';
-import Aboutfg from "../Image/about fg.png";
+import backillustration from "../Image/backillustration.svg";
+import Aboutfg from "../Image/about fg.svg";
 import Sectionwave from "./Svg";
 
 const AboutPage = () =>{
     return(
         <>
+            <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
             <section className="container-fluid" id="about-page">
                 <div className="row">
                     <div className="col-md-9 mx-auto my-5">

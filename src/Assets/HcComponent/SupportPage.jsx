@@ -1,4 +1,5 @@
 import React from "react";
+import backillustration from "../Image/backillustration.svg";
 import Sectionwave from "./Svg";
 import Img1 from "../Image/s1.png";
 import Img2 from "../Image/s2.png";
@@ -7,6 +8,7 @@ import Img3 from "../Image/s3.png";
 const SupportPage = () =>{
     return(
         <>
+           <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
            <section className="container-fluid" id="support-page">
                 <div className="row">
                     <div className="col-md-7 my-5">
@@ -17,7 +19,7 @@ const SupportPage = () =>{
                                 </div>
                                 <div className="offset-1 col-7">
                                     <h2>Get Support</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At tenetur itaque, modi nemo odio nostrum?</p>
+                                    <p>Let us know your doubts and we will provide our support in every manner. Call us or mail us your queries and we will reach out to you as soon as possible. We at HardCipher believe in providing full support to our customers.</p>
                                 </div>
                             </div>
                         </div>
@@ -27,7 +29,7 @@ const SupportPage = () =>{
                             <div className="row">
                                 <div className="col-7">
                                     <h2>Our Community</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At tenetur itaque, modi nemo odio nostrum?</p>
+                                    <p>We are a dedicated team of developers who puts in their heart and soul in providing 100% satisfaction to our clients. We believe in taking our clients onboard as we work through so they get what they want and are pleased to see the results.</p>
                                 </div>
                                 <div className="col-4 offset-1">
                                     <img src={Img2} alt="get support" className="img-fluid" />
@@ -43,7 +45,7 @@ const SupportPage = () =>{
                                 </div>
                                 <div className="offset-1 col-7">
                                     <h2>F.A.Q</h2>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At tenetur itaque, modi nemo odio nostrum?</p>
+                                    <p>The questions you have in your mind related to our company and the services we provide have all been answered here for your better understanding.</p>
                                 </div>
                             </div>
                         </div>

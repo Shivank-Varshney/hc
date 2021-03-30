@@ -25,9 +25,39 @@ section{
     padding: 0 10 !important;
   }
 }
+.backillustration{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+@media only screen and (max-width: 991px) {
+  .backillustration{
+    display: none;
+  }
+}
+
+.carousel-btn{
+  font-weight: bolder;
+  color: #F71C1C;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #F71C1C;
+  padding: 0 6px;
+  border-radius: 50px;
+  &:hover{
+    background-color: #F71C1C;
+    color: #fff;
+  }
+  &:disabled {
+    visibility: hidden;
+  }
+}
 
 /*    Navbar-Section Start    */
 .navbar{
+  // background-image: linear-gradient(#d3f5f2, #fff);
+  // background-color: #fff;
   position: absolute;
   top: 0;
   width: 100%;
@@ -42,6 +72,17 @@ section{
   }
   .active-nav{
     color: #DB0505;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar{
+    background-color: #fff;
+    .nav-link{
+      border-bottom: 2px solid transparent;
+    &:hover{
+      border-bottom: 2px solid #F71C1C;
+      }
+    }
   }
 }
 @media only screen and (max-width: 720px) {
@@ -78,11 +119,11 @@ section{
     color: #1E1D1D;
     font-family: geometric;
     text-transform: capitalize;
-    font-size: 66px;
+    font-size: 46px;
   }
   .header-text{
     font-family: calibril;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 30px;
   }
   .play-btn{
@@ -213,6 +254,9 @@ section{
     font-size: 66px;
     text-align: center;
   }
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
 }
 @media only screen and (max-width: 540px) {
   #work{
@@ -315,6 +359,9 @@ section{
     }
     .rec.rec-arrow:hover{
       background-color: #F71C1C;
+    }
+    .rec.rec-arrow:disabled {
+      visibility: hidden;
     }
   }
 }
@@ -641,6 +688,83 @@ section{
 }
 /*    Contact-page end      */
 
+/*    Template 1 Start     */
+#template1{
+  .header{
+    background-image: linear-gradient(#fff 5%, #7672a2);
+    margin-top: 150px;
+    form{
+      padding: 30px;
+      border: 1px solid #7672a2;
+      margin: 100px 0;
+    }
+    .btn-get-started{
+      color: #1B1464;
+      border: 1px solid #1B1464;
+      padding: 5px 20px;
+      border-radius: 20px;
+      &:hover{
+        background-color: #1B1464;
+        color: #fff;
+      }
+    }
+  }
+  .clients{
+    background-color: #1B1464;
+  }
+
+  #testimonialsection{
+    background-image: linear-gradient(#fff, #7672a2);
+    background-color: #d3f5f2;
+    h2{
+      padding: 60px 0 0;
+      color: #1E1D1D;
+      font-family: geometric;
+      text-transform: capitalize;
+      font-size: 66px;
+    }
+    .testimonial{
+      text-align: center;
+      padding: 50px 0;
+      font-size: 26px;
+      font-family: Calibril;
+      .MuiSvgIcon-root{
+        color: #F71C1C;
+        font-size: 60px;
+      }
+      .img-fluid{
+        width: 100px;
+      }
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    #testimonialsection{
+      h2{
+        padding: 60px 0 0;
+        font-size: 36px;
+      }
+      .testimonial{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 16px;
+        font-family: Calibril;
+        .MuiSvgIcon-root{
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+/*    Template 1 End     */
+
+/*    Template 2 Start     */
+#template2{
+  margin-top: 150px;
+}
+  
+/*    Template 2 End     */
+
+
 /*    Footer-Section Start    */
 #footer{
   border-top: 2px solid #1E1D1D;
@@ -665,6 +789,7 @@ section{
         font-family: calibril;
         color: #1E1D1D;
         font-size: 20px;
+        text-decoration-color: #333333;
       }
     }
   }
@@ -676,15 +801,6 @@ section{
     }
     .img-fluid{
       width: 80px;
-    }
-  }
-  .copyright{
-    p{
-      font-size: 18px;
-    }
-    .nav{
-      color: #1E1D1D;
-      font-size: 16px;
     }
   }
 }
@@ -707,11 +823,33 @@ section{
     }
     .copyright{
       p{
-        font-size: 18px;
-      }
-      .nav{
         font-size: 14px;
       }
+      .nav{
+        font-size: 12px;
+      }
+    }
+  }
+}
+.copyright{
+  p{
+    font-size: 16px;
+  }
+  .nav{
+    color: #1E1D1D;
+    font-size: 16px;
+  }
+  .copyright-link{
+    color: #F71C1C;
+  }
+}
+@media only screen and (max-width: 540px){
+  .copyright{
+    p{
+      font-size: 14px;
+    }
+    .nav{
+      font-size: 12px;
     }
   }
 }

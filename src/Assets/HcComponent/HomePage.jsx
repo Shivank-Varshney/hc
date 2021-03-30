@@ -1,32 +1,50 @@
 import React from "react";
 import { NavHashLink } from 'react-router-hash-link';
-import Carousel from "react-elastic-carousel";
+import Carousel, { consts } from "react-elastic-carousel";
 import Clients, {Cdata} from "./Clients";
-import Testimonial, {Tdata} from "./Testimonial";
+import TestimonialSection from "./TestimonialSection";
 import {Carouselcard, Cardata} from "./PortfolioPage";
-import ServicesSectionComponent, {ServicesSectionComponentData} from "./ServiceData";
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import GetAppIcon from '@material-ui/icons/GetApp';
+import ServiceSection from "./ServiceSection";
+// import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+// import GetAppIcon from '@material-ui/icons/GetApp';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-import About from "../Image/about-banner.png";
-import Work from "../Image/work-banner.png";
+import Homebanner from "../Image/hcheaderillustration.svg";
+import About from "../Image/hcaboutillustration.svg";
+import Work from "../Image/hcworkillustration.svg";
+import backillustration from "../Image/backillustration.svg";
 import Card1 from "../Image/s1.png";
 import Card2 from "../Image/s2.png";
 import Card3 from "../Image/s3.png";
-import Homebanner from "../Image/Home-fg.png";
 import Sectionwave from "./Svg";
 
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 1 },
+    { width: 850, itemsToShow: 3 },
+    { width: 1150, itemsToShow: 4, itemsToScroll: 1 }
+  ];
+
+
 const HomePage = () =>{
+    const myArrow = ({ type, onClick, isEdge }) => {
+        const pointer = type === consts.PREV ? '<' : '>'
+        return (<>
+          <div onClick={onClick} disabled={isEdge} className="my-auto carousel-btn">
+            {pointer}
+          </div></>
+        )
+    } 
     return(
         <>
+            <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
             {/* header section start */}
             <section className="container-fluid" id="header">
                 <div className="row">
                     <div className="col-lg-6 my-auto">  
-                        <h1 className="header-heading">heading</h1>
-                        <p className="header-text py-4">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                        <button className="play-btn mr-4 mt-3"><PlayArrowIcon /> Video tour</button>
-                        <button className="download-btn"><GetAppIcon /> Download</button>
+                        <h1 className="header-heading">Where Your Imagination meets our Creativity</h1>
+                        <p className="header-text py-4">As an <strong>IT service provider</strong> we believe in the power of online presence of a brand. We have a set of employees who are best in their respective fields and work with utmost dedication. We make sure that your experience with us is good enough to bring you back to us for your future projects.</p>
+                        {/* <button className="play-btn mr-4 mt-3"><PlayArrowIcon /> Video tour</button>
+                        <button className="download-btn"><GetAppIcon /> Download</button> */}
                     </div>
                     <div className="col-lg-6 mt-lg-0 mt-5">  
                        <img src={Homebanner} alt="illustration" className="img-fluid" />
@@ -46,21 +64,7 @@ const HomePage = () =>{
                     </div>
                 </div>
                   
-                <div className="row my-5">
-                {
-                    ServicesSectionComponentData.map((val,index)=>{
-                        return(
-                            <ServicesSectionComponent
-                                key = {index}
-                                imgsrc = {val.imgsrc}
-                                heading = {val.heading}
-                                text = {val.text}
-                                link = {val.link}
-                            />
-                        );
-                    })
-                }
-                </div>
+               <ServiceSection />
             </section>
             {/* service section end */}
 
@@ -104,7 +108,7 @@ const HomePage = () =>{
                 </div>
                 <div className="row">
                     <div className="col">
-                       <Carousel itemsToShow={3} pagination={false}>
+                       <Carousel renderArrow={myArrow} pagination={false} breakPoints={breakPoints} itemPadding={[0, 20]}>
                                 {
                                     Cardata.map((val,index)=>{
                                         return(
@@ -151,26 +155,14 @@ const HomePage = () =>{
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-6 mx-auto mb-5">
-                        <Carousel itemsToShow={1} showArrows={false}>
-                                {
-                                    Tdata.map((val,index)=>{
-                                        return(
-                                            <Testimonial
-                                                key = {index}
-                                                comment = {val.comment}
-                                                name = {val.name}
-                                            />
-                                        );
-                                    })
-                                }
-                        </Carousel>
+                    <div className="col-lg-12 mx-auto mb-5">
+                        <TestimonialSection />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-12 my-5">
                         <div className="clients-list mb-5">
-                         <Carousel itemsToShow={4} pagination={false}>
+                         <Carousel breakPoints={breakPoints} pagination={false}  renderArrow={myArrow}>
                                 {
                                     Cdata.map((val,index)=>{
                                         return(

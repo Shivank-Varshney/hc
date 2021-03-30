@@ -1,11 +1,13 @@
 import React from "react";
 import {ServicesPageComponent, ServicesPageComponentData} from "./ServiceData";
+import backillustration from "../Image/backillustration.svg";
 import { NavHashLink } from 'react-router-hash-link';
 import Sectionwave from "./Svg";
 
 const ServicePage = () =>{
     return(
         <>
+            <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
             <section className="container-fluid" id="services-page">
                 <div className="row mx-auto my-5">
                     <div className="col-lg-4 text-center mb-5">

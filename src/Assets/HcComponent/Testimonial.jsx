@@ -1,6 +1,6 @@
 import React from "react";
 import { NavHashLink } from 'react-router-hash-link';
-import Homebanner from "../Image/Home-fg.png";
+import Homebanner from "../Image/hcheaderillustration.svg";
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 
 const Testimonial = (props) =>{

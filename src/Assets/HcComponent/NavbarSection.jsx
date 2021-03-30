@@ -6,7 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const NavbarSection = () =>{
     return(
         <>
-            <div className="container-fluid px-md-5 pr-5">
+            <section className="container-fluid">
                <div className="row">
                    <div className="col">
                        <div className="navbar navbar-expand-lg">
@@ -30,7 +30,7 @@ const NavbarSection = () =>{
                         </div>
                    </div>
                </div>
-            </div>
+            </section>
         </>
     );
 }
