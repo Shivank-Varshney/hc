@@ -63,11 +63,11 @@ section{
   width: 100%;
   z-index: 1;
   .brand-logo{
-    height: 100px;
+    height: 60px;
   }
   .nav-link{
     color: #000;
-    font-size: 28px;
+    font-size: 22px;
     font-family: geometric;
   }
   .active-nav{
@@ -88,6 +88,9 @@ section{
 @media only screen and (max-width: 720px) {
   .navbar{
     .brand-logo{
+      height: 30px !important;
+    }
+    .brand-logo{
       height: 80px;
     }
     .nav-link{
@@ -98,7 +101,7 @@ section{
 @media only screen and (max-width: 1160px) {
   .navbar{
     .nav-link{
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 }  
@@ -119,11 +122,11 @@ section{
     color: #1E1D1D;
     font-family: geometric;
     text-transform: capitalize;
-    font-size: 46px;
+    font-size: 36px;
   }
   .header-text{
     font-family: calibril;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
   }
   .play-btn{
@@ -144,10 +147,10 @@ section{
   #header{
     margin-top: 120px;
     .header-heading{
-      font-size: 36px;
+      font-size: 26px;
     }
     .header-text{
-      font-size: 16px;
+      font-size: 14px;
     }
     .play-btn{
       padding: 8px 18px;
@@ -170,19 +173,19 @@ section{
     color: #1E1D1D;
     font-family: geometric;
     text-transform: capitalize;
-    font-size: 66px;
+    font-size: 56px;
   }
   h4{
     color: #1E1D1D;
     font-family: geometric;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 22px;
   }
   p{
-    font-size: 19px;
+    font-size: 16px;
   }
   .read-more{
-    font-size: 18px;
+    font-size: 16px;
     color: #F71C1C;
     text-decoration-color: #fff;
     padding: 0 8px;
@@ -198,13 +201,13 @@ section{
       font-size: 36px;
     }
     h4{
-      font-size: 18px;
+      font-size: 16px;
     }
     p{
-      font-size: 16px;
+      font-size: 14px;
     }
     .read-more{
-      font-size: 16px;
+      font-size: 12px;
     }
   }
 }
@@ -215,14 +218,14 @@ section{
     color: #1E1D1D;
     font-family: geometric;
     text-transform: capitalize;
-    font-size: 66px;
+    font-size: 56px;
     padding-bottom: 40px;
   }
   p{
-    font-size: 22px;
+    font-size: 16px;
   }
   .read-more{
-    font-size: 18px;
+    font-size: 14px;
     color: #F71C1C;
     text-decoration-color: #fff;
     padding: 0 8px;
@@ -238,10 +241,10 @@ section{
       font-size: 36px;
     }
     p{
-      font-size: 16px;
+      font-size: 14px;
     }
     .read-more{
-      font-size: 16px;
+      font-size: 12px;
     }
   }
 }
@@ -251,7 +254,7 @@ section{
   h2{
     color: #1E1D1D;
     font-family: geometric;
-    font-size: 66px;
+    font-size: 56px;
     text-align: center;
   }
   .rec.rec-arrow:disabled {
@@ -302,9 +305,9 @@ section{
   .btn-subscribe{
     font-family: geometric;
     background-color: #fff;
-    padding: 6px 22px 8px 22px;
+    padding: 8px 22px;
     border: none;
-    font-size: 25px;
+    font-size: 18px;
     border-radius: 30px;
     position: absolute;
     right: 15px;
@@ -336,16 +339,16 @@ section{
     color: #1E1D1D;
     font-family: geometric;
     text-transform: capitalize;
-    font-size: 66px;
+    font-size: 56px;
   }
   .testimonial{
     text-align: center;
     padding: 50px 0;
-    font-size: 26px;
+    font-size: 20px;
     font-family: Calibril;
     .MuiSvgIcon-root{
       color: #F71C1C;
-      font-size: 60px;
+      font-size: 30px;
     }
     .img-fluid{
       width: 100px;
@@ -403,11 +406,11 @@ section{
     }
     h5{
       font-family: geometric;
-      font-size: 26px;
+      font-size: 22px;
     }
     p{
       font-family: calibril;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 27px;
     }
     a{
@@ -424,7 +427,7 @@ section{
         font-size: 22px;
       }
       p{
-        font-size: 18px;
+        font-size: 14px;
         line-height: 27px;
       }
     }
@@ -437,7 +440,7 @@ section{
   background-image: linear-gradient( #fff, #d3f5f2);
   margin-top: 150px;
   font-family: calibril;
-  font-size: 24px;
+  font-size: 18px;
   .get-in-touch-btn{
     color: #F71C1C;
     border: 2px solid #F71C1C;
@@ -455,7 +458,7 @@ section{
 @media only screen and (max-width: 540px) {
   #about-page{
     margin-top: 50px;
-    font-size: 18px;
+    font-size: 14px;
     .get-in-touch-btn{
       padding: 8px 25px;
     }
@@ -473,12 +476,12 @@ section{
   }
   h4{
     font-family: geometric;
-    font-size: 36px;
+    font-size: 28px;
     text-transform: uppercase;
   }
   p{
     font-family: calibril;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
   }
   .portfolio-btn{
@@ -498,13 +501,13 @@ section{
   #services-page{
     margin-top: 200px;
     h2{
-      font-size: 38px;
+      font-size: 32px;
     }
     h4{
-      font-size: 24px;
+      font-size: 20px;
     }
     p{
-      font-size: 18px;
+      font-size: 14px;
     }
     .portfolio-btn{
       padding: 8px 25px;
@@ -517,28 +520,31 @@ section{
 #support-page{
   background-image: linear-gradient( #fff, #d3f5f2);
   margin-top: 200px;
+  .img-fluid{
+    width: 150px;
+  }
   .support{
     padding-bottom: 150px;
     border-bottom: 2px solid #3e8986;
   }
   h2{
     font-family: geometric;
-    font-size: 56px;
+    font-size: 46px;
   }
   p{
     font-family: calibril;
-    font-size: 26px;
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 540px) {
   #support-page{
     h2{
       font-family: geometric;
-      font-size: 36px;
+      font-size: 22px;
     }
     p{
       font-family: calibril;
-      font-size: 22px;
+      font-size: 14px;
     }
   }
 }
@@ -549,11 +555,11 @@ section{
   margin-top: 200px;
   h2{
     font-family: geometric;
-    font-size: 66px;
+    font-size: 56px;
   }
   p{
     font-family: calibril;
-    font-size: 20px;
+    font-size: 16px;
     padding-bottom: 50px;
   }
   .card{
@@ -599,10 +605,10 @@ section{
   #portfolio-page{
     min-height: 100vh;
     h2{
-      font-size: 46px;
+      font-size: 36px;
     }
     p{
-      font-size: 18px;
+      font-size: 14px;
       padding-bottom: 50px;
     }
     .contact-us-btn{
@@ -619,18 +625,21 @@ section{
   h2{
     font-family: geometric;
     color: #1E1D1D;
-    font-size: 66px;
+    font-size: 56px;
   }
   p{
     font-family: calibril;
-    font-size: 20px;
+    font-size: 18px;
   }
   form{
     background-image: linear-gradient(rgba(247, 28, 28, 0.6), rgba(247, 28, 28, 1) 75%);
     padding: 50px;
     border-radius: 25px;
-    .form-group{
+    label{
       font-family: geometric;
+    }
+    .form-group{
+      font-family: calibril;
       font-size: 20px;
     }
     .form-control{
@@ -644,7 +653,7 @@ section{
       color: #F71C1C;
       padding: 0 40px;
       font-family: geometric;
-      font-size: 28px;
+      font-size: 22px;
       border: none;
       border-radius: 20px;
       margin-top: 20px;
@@ -657,19 +666,21 @@ section{
   h5{
     color: #1E1D1D;
     font-family: geometric;
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 540px) {
   #contact-page{
-    padding-top: 150px;
+    margin-top: 100px;
     h2{
-      font-size: 46px;
+      font-size: 36px;
     }
     p{
-      font-size: 18px;
+      font-size: 14px;
     }
     form{
+      padding: 10px;
+      border-radius: 10px;
       .form-group{
         font-size: 18px;
       }
@@ -682,7 +693,7 @@ section{
       font-size: 35px;
     }
     h5{
-      font-size: 24px;
+      font-size: 22px;
     }
   }
 }
@@ -773,13 +784,13 @@ section{
     color: #1E1D1D;
     font-family: sans-serif;
     text-transform: capitalize;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
   }
   p{
     color: #1E1D1D;
     font-family: calibril;
-    font-size: 20px;
+    font-size: 18px;
   }
   ul{
     li{
@@ -788,7 +799,7 @@ section{
       .nav{
         font-family: calibril;
         color: #1E1D1D;
-        font-size: 20px;
+        font-size: 18px;
         text-decoration-color: #333333;
       }
     }
@@ -807,17 +818,17 @@ section{
 @media only screen and (max-width: 540px) {
   #footer{
     h4{
-      font-size: 20px;
+      font-size: 18px;
     }
     p{
       color: #1E1D1D;
       font-family: calibril;
-      font-size: 18px;
+      font-size: 16px;
     }
     ul{
       li{
         .nav{
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
@@ -833,11 +844,11 @@ section{
 }
 .copyright{
   p{
-    font-size: 16px;
+    font-size: 14px;
   }
   .nav{
     color: #1E1D1D;
-    font-size: 16px;
+    font-size: 14px;
   }
   .copyright-link{
     color: #F71C1C;
@@ -846,7 +857,7 @@ section{
 @media only screen and (max-width: 540px){
   .copyright{
     p{
-      font-size: 14px;
+      font-size: 12px;
     }
     .nav{
       font-size: 12px;

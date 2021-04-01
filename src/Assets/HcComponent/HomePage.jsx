@@ -10,7 +10,8 @@ import ServiceSection from "./ServiceSection";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import Homebanner from "../Image/hcheaderillustration.svg";
 import About from "../Image/hcaboutillustration.svg";
-import Work from "../Image/hcworkillustration.svg";
+import Work1 from "../Image/hcworkillustration.svg";
+import Work2 from "../Image/hcworkillustration.png";
 import backillustration from "../Image/backillustration.svg";
 import Card1 from "../Image/s1.png";
 import Card2 from "../Image/s2.png";
@@ -28,10 +29,12 @@ const breakPoints = [
 const HomePage = () =>{
     const myArrow = ({ type, onClick, isEdge }) => {
         const pointer = type === consts.PREV ? '<' : '>'
-        return (<>
+        return (
+        <>
           <div onClick={onClick} disabled={isEdge} className="my-auto carousel-btn">
             {pointer}
-          </div></>
+          </div>
+        </>
         )
     } 
     return(
@@ -92,17 +95,22 @@ const HomePage = () =>{
              {/* work section start */}
              <section className="container-fluid section-gap" id="work">
                 <div className="row">
-                    <div className="col pb-5">
+                    <div className="col pb-sm-5">
                         <h2>How we work</h2>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-9 offset-3">
-                        <img src={Work} alt="how we work" className="img-fluid" />
+                    <div className="col-9 offset-3 d-sm-block d-none">
+                        <img src={Work1} alt="how we work" className="img-fluid" />
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col py-5">
+                    <div className="col d-sm-none">
+                        <img src={Work2} alt="how we work" className="img-fluid" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col py-sm-5">
                         <h2>Output</h2>
                     </div>
                 </div>
@@ -214,13 +222,13 @@ const HomePage = () =>{
 const Card = (props) =>{
     return(
         <>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4">
                 <div className="card my-lg-0 my-4">
                     <div className="row no-gutters">
-                        <div className="col-3">
+                        <div className="col-sm-3 text-center">
                             <img src={props.imgsrc} alt="card1" className="img-fluid" />
                             </div>
-                            <div className="col-9">
+                            <div className="col-sm-9">
                             <div className="card-body">
                                 <h5 className="card-title">{props.heading}</h5>
                                 <p className="card-text my-4">{props.text}</p>

@@ -43,7 +43,7 @@ const Template1 = () =>{
 
             {/* Client section start */}
             <div id="">
-                <section className="container-fluid" className="clients">
+                <section className="container-fluid clients">
                     <div className="row">
                         <div className="col-md-12 my-5">
                             <div className="clients-list">

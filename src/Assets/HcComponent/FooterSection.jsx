@@ -19,11 +19,11 @@ const FooterSection = () =>{
                 <div className="row">
                     <div className="col-lg-3 mb-5">
                         <img src={logo} className="img-fluid my-5" alt="Hard Cipher" width="200px" />
-                        <p><RoomIcon /> B3/17 first floor model town first Delhi, India (110009)</p>
+                        <p><RoomIcon /> B3/17 First floor model town first Delhi, India (110009).</p>
                         <p><PhoneIcon /> (+91) 9711855888</p>
                         <p><MailOutlineIcon /> info@hardcipher.io</p>
                     </div>
-                    <div className="col-6 col-lg-2 col-sm-3  my-5">
+                    {/* <div className="col-6 col-lg-2 col-sm-3  my-5">
                         <h4>Product</h4>
                         <ul>
                             <li><NavHashLink className="nav" to="/">Lorem Ipsum</NavHashLink></li>
@@ -32,8 +32,8 @@ const FooterSection = () =>{
                             <li><NavHashLink className="nav" to="/">Lorem Ipsum</NavHashLink></li>
                             <li><NavHashLink className="nav" to="/">Lorem Ipsum</NavHashLink></li>
                         </ul>
-                    </div>
-                    <div className="col-6 col-lg-2 col-sm-3  my-5">
+                    </div> */}
+                    <div className="col-6 mx-lg-auto col-lg-2 col-md-3  my-5">
                     <h4>Quick Links</h4>
                         <ul>
                             <li><NavHashLink className="nav" to="/#">Home</NavHashLink></li>
@@ -43,7 +43,7 @@ const FooterSection = () =>{
                             <li><NavHashLink className="nav" to="/contact-us#">Contact Us</NavHashLink></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-lg-2 col-sm-3 my-5">
+                    <div className="col-6 col-lg-2 col-md-3 my-5">
                     <h4>Resources</h4>
                         <ul>
                             <li><NavHashLink className="nav" to="/#">Blog</NavHashLink></li>
@@ -53,7 +53,7 @@ const FooterSection = () =>{
                             <li><NavHashLink className="nav" to="/#">Active</NavHashLink></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-lg-3 col-sm-3  my-5">
+                    <div className="col-6 col-lg-3 col-md-3  my-5">
                         <h4 className="text-center">Follow us</h4>
                         <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div className="btn-group btn-group-lg" role="group" aria-label="First group">

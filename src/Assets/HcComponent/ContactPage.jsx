@@ -26,15 +26,7 @@ const ContactPage = () =>{
 
                                 <div className="col-md-12 form-group">
                                     <label htmlFor="subject">Subject</label>
-                                    <select className="form-control js-select" id="subject" aria-describedby="subject" placeholder="Select subject">
-                                        <option></option>
-                                        <option value="1">WEB DEVELOPMENT</option>
-                                        <option value="3">BRAND MARKETING</option>
-                                        <option value="4">GRAPHIC DESIGNING</option>
-                                        <option value="5">MOBILE DEVELOPMENT</option>
-                                        <option value="5">SOFTWARE DEVELOPMENT</option>
-                                        <option value="5">PRINT MEDIA</option>
-                                    </select>
+                                    <input type="text" className="form-control" id="subject" placeholder="Enter your subject" />
                                 </div>
 
                                 <div className="col-md-12 form-group">

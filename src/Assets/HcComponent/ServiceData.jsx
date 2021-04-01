@@ -38,7 +38,7 @@ const ServicesSectionComponentData = [
     {
         imgsrc : S2,
         heading : "brand marketing",
-        text : "We at Hardciphers intend to boost your business and place it at the top of your industry. We start from scratch to step by step develop an identity, ...... ",
+        text : "We at Hardciphers intend to boost your business and place it at the top of your industry. We start from scratch to step by step develop an identity ...... ",
         link :"/services#brand-marketing",
     },
     {
