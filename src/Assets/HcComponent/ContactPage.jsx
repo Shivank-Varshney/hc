@@ -44,17 +44,17 @@ const ContactPage = () =>{
                                 <div className="row">
                                     <div className="col-8">
                                         <h5> Office address</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur - India</p>
+                                        <p>B3/17 First floor model town first Delhi, India (110009).</p>
                                     </div>
                                     <div className="col-4"><RoomIcon /></div>
                                     <div className="col-8 my-4">
                                         <h5> Phone number</h5>
-                                        <p>+00 123-456-789-00</p>
+                                        <p>(+91) 9711855888</p>
                                     </div>
                                     <div className="col-4 my-4"><PhoneIcon /></div>
                                     <div className="col-8">
                                         <h5>Email address</h5>
-                                        <p>info@yourdomain.com</p>
+                                        <p>info@hardcipher.io</p>
                                     </div>
                                     <div className="col-4"><MailOutlineIcon /></div>
                                 </div>

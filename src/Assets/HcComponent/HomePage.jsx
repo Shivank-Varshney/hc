@@ -80,7 +80,7 @@ const HomePage = () =>{
                     </div>
                     <div className="col-md-6 offset-md-2 my-auto">
                         <h2>
-                            about hard cipher
+                            about hardCipher
                         </h2>
                         <p>We at hardCipher, are known to be one of the topmost, inventive and above all customer cordial advanced specialist organizations in the market. we work for the fulﬁllment of our customers need and providing high grade quality. We invest heavily in our work portfolio of profoundly satisﬁed customers, hence consistently thriving advancement........</p>
                         <div className=" d-flex justify-content-end">
