@@ -18,8 +18,8 @@ const PortfolioPage = () =>{
             <section className="container-fluid" id="portfolio-page">
                 <div className="row">
                     <div className="col-md-8 mx-auto">
-                        <h2 className="text-center">Heading</h2>
-                        <p className="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, vitae. Voluptates perferendis ipsa placeat libero ex iure sed assumenda omnis doloribus! Magnam, possimus autem aliquid temporibus veniam iure dicta explicabo.</p>
+                        <h2 className="text-center">Portfolio</h2>
+                        <p className="text-center">With our team of dedicated professionals, we have successfully delivered all the projects within the time frame. We make sure our clients are fully convinced of our work and are content with our services. We thrive on converting customers into our regular clients. We bring out the best of everything and are nothing but proud to show you our work.</p>
                     </div>
                 </div>
                 <div className="container">
