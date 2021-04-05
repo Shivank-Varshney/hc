@@ -91,7 +91,7 @@ const FooterSection = () =>{
             <section className="container-fluid">
                 <div className="row copyright">
                     <div className="col-md-6 d-flex justify-content-md-start justify-content-center">
-                        <p>© <strong><NavHashLink to="/#" className="copyright-link">Hardcipher pvt ltd</NavHashLink></strong> | Web Design India {curryear}. All Rights Reserved.</p>
+                        <p>© {curryear} <strong><NavHashLink to="/#" className="copyright-link">Hardcipher Pvt Ltd</NavHashLink></strong> | All Rights Reserved.</p>
                     </div>
                     <div className="col-md-6 d-flex  justify-content-md-end justify-content-center">
                         <NavHashLink to="/privacy-policy#" className="mx-3 nav">Terms of service </NavHashLink>|
