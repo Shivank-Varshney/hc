@@ -20,7 +20,7 @@ const FooterSection = () =>{
                     <div className="col-lg-3 mb-5">
                         <img src={logo} className="img-fluid my-5" alt="Hard Cipher" width="200px" />
                         <p><RoomIcon /> B3/17 First floor model town first Delhi, India (110009).</p>
-                        <p><PhoneIcon /> (+91) 9711855888</p>
+                        <p><PhoneIcon /> (+91) 97118 55888</p>
                         <p><MailOutlineIcon /> info@hardcipher.io</p>
                     </div>
                     {/* <div className="col-6 col-lg-2 col-sm-3  my-5">
@@ -63,7 +63,7 @@ const FooterSection = () =>{
                                     </a>
                                 </button>
                                 <button type="button" className="btn-icon">
-                                    <a href="/">
+                                    <a href="https://wa.me/919711855888">
                                         <img src={icon2} alt="whatsapp-icon" className="img-fluid" />
                                     </a>
                                 </button>
