@@ -94,9 +94,9 @@ const FooterSection = () =>{
                         <p>© <strong><NavHashLink to="/#" className="copyright-link">Hardcipher pvt ltd</NavHashLink></strong> | Web Design India {curryear}. All Rights Reserved.</p>
                     </div>
                     <div className="col-md-6 d-flex  justify-content-md-end justify-content-center">
-                        <NavHashLink to="/" className="mx-3 nav">Terms of service </NavHashLink>|
-                        <NavHashLink to="/" className="mx-3 nav"> Privacy Policy </NavHashLink>| 
-                        <NavHashLink to="/" className="mx-3 nav"> Help</NavHashLink>
+                        <NavHashLink to="/privacy-policy#" className="mx-3 nav">Terms of service </NavHashLink>|
+                        <NavHashLink to="/privacy-policy#" className="mx-3 nav"> Privacy Policy </NavHashLink>| 
+                        <NavHashLink to="/privacy-policy#" className="mx-3 nav"> Help</NavHashLink>
                     </div>
                 </div>
             </section>

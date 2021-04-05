@@ -832,14 +832,6 @@ section{
         }
       }
     }
-    .copyright{
-      p{
-        font-size: 14px;
-      }
-      .nav{
-        font-size: 12px;
-      }
-    }
   }
 }
 .copyright{
@@ -861,6 +853,28 @@ section{
     }
     .nav{
       font-size: 12px;
+    }
+  }
+}
+#policy-page{
+  margin-top: 100px;
+  h3{
+    font-family: geometric;
+  }
+  p{
+    font-family: calibril;
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 540px){
+  #policy-page{
+    margin-top: 50px;
+    h3{
+      font-size: 26px;
+    }
+    p{
+      font-size: 14px
     }
   }
 }
