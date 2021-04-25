@@ -2,12 +2,37 @@ import React from "react";
 import Header from "../Image/temp1header.svg";
 import Temp1 from "../Image/temp1.svg";
 import Clients, {Cdata} from "./Clients";
-import Carousel from "react-elastic-carousel";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import ServiceSection from "./ServiceSection";
 import TestimonialSection from "./TestimonialSection";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Template1 = () =>{
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 3000,
+        slidesToShow: 4,
+        arrows: false,
+        autoplay: true,
+        className: "slider",
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: { slidesToShow: 3}
+            },
+            {
+              breakpoint: 600,
+              settings: { slidesToShow: 2}
+            },
+            {
+              breakpoint: 480,
+              settings: { slidesToShow: 1}
+            }
+          ]
+    };
     return(
         <div id="template1">
             {/* Header Section Start */}
@@ -47,7 +72,7 @@ const Template1 = () =>{
                     <div className="row">
                         <div className="col-md-12 my-5">
                             <div className="clients-list">
-                            <Carousel itemsToShow={4} pagination={false}>
+                                <Slider {...settings}>
                                     {
                                         Cdata.map((val,index)=>{
                                             return(
@@ -58,7 +83,7 @@ const Template1 = () =>{
                                             );
                                         })
                                     }
-                            </Carousel>
+                                </Slider>
                             </div>
                         </div>
                     </div>

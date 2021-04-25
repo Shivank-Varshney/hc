@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +56,7 @@ section{
 }
 
 /*    Navbar-Section Start    */
-.navbar{
+#navbar-section{
   // background-image: linear-gradient(#d3f5f2, #fff);
   // background-color: #fff;
   position: absolute;
@@ -75,7 +76,7 @@ section{
   }
 }
 @media only screen and (max-width: 991px) {
-  .navbar{
+  #navbar-section{
     background-color: #fff;
     .nav-link{
       border-bottom: 2px solid transparent;
@@ -86,7 +87,7 @@ section{
   }
 }
 @media only screen and (max-width: 720px) {
-  .navbar{
+  #navbar-section{
     .brand-logo{
       height: 30px !important;
     }
@@ -99,14 +100,14 @@ section{
   }
 } 
 @media only screen and (max-width: 1160px) {
-  .navbar{
+  #navbar-section{
     .nav-link{
       font-size: 16px;
     }
   }
 }  
 @media only screen and (max-width: 320px) {
-  .navbar{
+  #navbar-section{
     .brand-logo{
       height: 50px;
     }

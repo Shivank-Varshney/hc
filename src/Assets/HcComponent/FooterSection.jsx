@@ -48,7 +48,7 @@ const FooterSection = () =>{
                         <ul>
                             <li><NavHashLink className="nav" to="/#">Blog</NavHashLink></li>
                             <li><NavHashLink className="nav" to="/support#">F.A.Q</NavHashLink></li>
-                            <li><NavHashLink className="nav" to="/#">Testimonial</NavHashLink></li>
+                            <li><NavHashLink className="nav" to="/#testimonials">Testimonial</NavHashLink></li>
                             <li><NavHashLink className="nav" to="/#">Site map</NavHashLink></li>
                             <li><NavHashLink className="nav" to="/#">Active</NavHashLink></li>
                         </ul>

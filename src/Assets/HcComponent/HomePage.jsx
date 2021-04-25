@@ -1,6 +1,5 @@
 import React from "react";
 import { NavHashLink } from 'react-router-hash-link';
-import Carousel, { consts } from "react-elastic-carousel";
 import Clients, {Cdata} from "./Clients";
 import TestimonialSection from "./TestimonialSection";
 import {Carouselcard, Cardata} from "./PortfolioPage";
@@ -17,26 +16,37 @@ import Card1 from "../Image/s1.png";
 import Card2 from "../Image/s2.png";
 import Card3 from "../Image/s3.png";
 import Sectionwave from "./Svg";
-
-const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 1 },
-    { width: 850, itemsToShow: 3 },
-    { width: 1150, itemsToShow: 4, itemsToScroll: 1 }
-  ];
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const HomePage = () =>{
-    const myArrow = ({ type, onClick, isEdge }) => {
-        const pointer = type === consts.PREV ? '<' : '>'
-        return (
-        <>
-          <div onClick={onClick} disabled={isEdge} className="my-auto carousel-btn">
-            {pointer}
-          </div>
-        </>
-        )
-    } 
+
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 3000,
+        slidesToShow: 4,
+        arrows: false,
+        autoplay: true,
+        className: "slider",
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: { slidesToShow: 3}
+            },
+            {
+              breakpoint: 600,
+              settings: { slidesToShow: 2}
+            },
+            {
+              breakpoint: 480,
+              settings: { slidesToShow: 1}
+            }
+          ]
+    };
+
     return(
         <>
             <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
@@ -50,7 +60,7 @@ const HomePage = () =>{
                         <button className="download-btn"><GetAppIcon /> Download</button> */}
                     </div>
                     <div className="col-lg-6 mt-lg-0 mt-5">  
-                       <img src={Homebanner} alt="illustration" className="img-fluid" />
+                       <img src={Homebanner} alt="it service provider" className="img-fluid" />
                     </div>
                 </div>
             </section>
@@ -110,13 +120,13 @@ const HomePage = () =>{
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col py-sm-5">
+                    <div className="col my-5">
                         <h2>Output</h2>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                       <Carousel renderArrow={myArrow} pagination={false} breakPoints={breakPoints} itemPadding={[0, 20]}>
+                        <Slider {...settings}>
                                 {
                                     Cardata.map((val,index)=>{
                                         return(
@@ -127,7 +137,7 @@ const HomePage = () =>{
                                         );
                                     })
                                 }
-                        </Carousel>
+                        </Slider>
                     </div>
                 </div>
             </section>
@@ -170,7 +180,7 @@ const HomePage = () =>{
                 <div className="row">
                     <div className="col-md-12 my-5">
                         <div className="clients-list mb-5">
-                         <Carousel breakPoints={breakPoints} pagination={false}  renderArrow={myArrow}>
+                        <Slider {...settings}>
                                 {
                                     Cdata.map((val,index)=>{
                                         return(
@@ -181,7 +191,7 @@ const HomePage = () =>{
                                         );
                                     })
                                 }
-                        </Carousel>
+                        </Slider>
                         </div>
                     </div>
                 </div>

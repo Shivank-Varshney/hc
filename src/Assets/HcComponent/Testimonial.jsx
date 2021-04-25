@@ -9,21 +9,13 @@ const Testimonial = (props) =>{
             <div className="testimonial">
                 <sup><FormatQuoteIcon /></sup><blockquote>{props.comment}</blockquote><sub><FormatQuoteIcon /></sub>
                 <p className="testimonial-author"><NavHashLink to="/">{props.name}</NavHashLink></p>
-                <img src={Homebanner} className="img-fluid" alt="Client list" />
+                <img src={Homebanner} className="img-fluid mx-auto" alt="Client list" />
             </div>
         </>
     );
 } 
 
 const Tdata = [
-    {
-        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae est iure ullam eveniet aspernatur maiores possimus et omnis ut sint excepturi mollitia.",
-        name: "Lorem ipsum"
-    },
-    {
-        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae est iure ullam eveniet aspernatur maiores possimus et omnis ut sint excepturi mollitia.",
-        name: "Lorem ipsum"
-    },
     {
         comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae est iure ullam eveniet aspernatur maiores possimus et omnis ut sint excepturi mollitia.",
         name: "Lorem ipsum"

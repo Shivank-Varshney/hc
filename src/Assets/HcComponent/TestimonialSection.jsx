@@ -1,13 +1,24 @@
 import React from "react";
 import Testimonial, {Tdata} from "./Testimonial";
-import Carousel from "react-elastic-carousel";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialSection = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true
+    };
     return(
         <>
             <div className="row">
                     <div className="col-lg-6 mx-auto mb-5">
-                        <Carousel itemsToShow={1} showArrows={false}>
+                        <Slider {...settings}>
                                 {
                                     Tdata.map((val,index)=>{
                                         return(
@@ -19,7 +30,7 @@ const TestimonialSection = () => {
                                         );
                                     })
                                 }
-                        </Carousel>
+                        </Slider>
                     </div>
                 </div>
         </>
