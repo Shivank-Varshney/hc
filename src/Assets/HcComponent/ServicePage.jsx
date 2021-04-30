@@ -3,10 +3,15 @@ import {ServicesPageComponent, ServicesPageComponentData} from "./ServiceData";
 import backillustration from "../Image/backillustration.svg";
 import { NavHashLink } from 'react-router-hash-link';
 import Sectionwave from "./Svg";
+import {Helmet} from "react-helmet";
 
 const ServicePage = () =>{
     return(
         <>
+            <Helmet>
+                <title>Best Digital Marketing Services In Delhi | Hardcipher| Free Audit</title>
+                <meta name="description" content="Best Digital Marketing Services In Delhi is 'Harcipher' which provides services like SEO, SMM, Google Adwords at affordable prices with free SEO Audit" />
+            </Helmet>
             <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
             <section className="container-fluid" id="services-page">
                 <div className="row mx-auto my-5">

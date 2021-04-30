@@ -3,10 +3,15 @@ import RoomIcon from '@material-ui/icons/Room';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import Sectionwave from "./Svg";
+import {Helmet} from "react-helmet";
 
 const ContactPage = () =>{
     return(
         <>
+            <Helmet>
+                <title>Digital Marketing Agency | Hardcipher | Contact Us</title>
+                <meta name="description" content="Hardcipher is one of the Best Digital Marketing Agency helps you in growing your business digitally. Feel Free To Contact Us and Start Today!" />
+            </Helmet>
             <section className="container-fluid" id="contact-page">
                 <div className="container">
                     <div className="row">

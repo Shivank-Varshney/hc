@@ -19,6 +19,7 @@ import Sectionwave from "./Svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {Helmet} from "react-helmet";
 
 
 const HomePage = () =>{
@@ -49,6 +50,10 @@ const HomePage = () =>{
 
     return(
         <>
+            <Helmet>
+                <title>Best IT Service Provider in Delhi | IT Company | Hardcipher</title>
+                <meta name="description" content="Best IT Service Provider in Delhi is Hardcipher, which provides services like Web Development, Software Development, App Development. ITCompany" />
+            </Helmet>
             <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
             {/* header section start */}
             <section className="container-fluid" id="header">
@@ -60,7 +65,7 @@ const HomePage = () =>{
                         <button className="download-btn"><GetAppIcon /> Download</button> */}
                     </div>
                     <div className="col-lg-6 mt-lg-0 mt-5">  
-                       <img src={Homebanner} alt="it service provider" className="img-fluid" />
+                       <img src={Homebanner} alt="it service provider, BEST IT Service Provider in Delhi, IT Company" className="img-fluid" />
                     </div>
                 </div>
             </section>

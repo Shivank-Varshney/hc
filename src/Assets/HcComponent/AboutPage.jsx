@@ -3,15 +3,20 @@ import { NavHashLink } from 'react-router-hash-link';
 import backillustration from "../Image/backillustration.svg";
 import Aboutfg from "../Image/about fg.svg";
 import Sectionwave from "./Svg";
+import {Helmet} from "react-helmet";
 
 const AboutPage = () =>{
     return(
         <>
+            <Helmet>
+                <title> Digital Marketing Services | Seo Specialist | Hardcipher</title>
+                <meta name="description" content="Hardcipher is one of the Best Digital Marketing Services providers in India deals in services like SEO, SMM, App, Website, and Software Development. " />
+            </Helmet>
             <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
             <section className="container-fluid" id="about-page">
                 <div className="row">
                     <div className="col-md-9 mx-auto my-5">
-                    <img src={Aboutfg} alt="illustration" className="img-fluid my-5" />
+                    <img src={Aboutfg} alt="Digital Marketing Services, SEO Specialist, Hardcipher" className="img-fluid my-5" />
                         <article>
                         <p>We at hardCipher, are known to be one of the topmost, inventive and above all customer cordial advanced specialist organizations in the market. we work for the fulfillment of our customers need and providing high grade quality. We invest heavily in our work portfolio of profoundly satisfied customers, hence consistently thriving advancement in the industry.</p>
                         <br />
