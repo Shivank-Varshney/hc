@@ -700,6 +700,73 @@ section{
 }
 /*    Contact-page end      */
 
+/*    Blog-page start    */
+#blog-page{
+  background-image: linear-gradient( #fff, #d3f5f2);
+  margin-top: 140px;
+  font-family: calibril;
+  h2{
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 18px;
+    text-align: justify;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 540px) {
+  #blog-page{
+    margin-top: 50px;
+    p{
+      font-size: 14px;
+    }
+  }
+}
+/*    Blog-page end      */
+
+#aboutus{
+  font-family: calibril;
+  h2{
+    color: #1E1D1D;
+    font-family: geometric;
+    text-transform: capitalize;
+    font-size: 56px;
+    padding-bottom: 40px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .read-more{
+    font-size: 14px;
+    color: #F71C1C;
+    text-decoration-color: #fff;
+    padding: 0 8px;
+    &:hover{
+      color: #F71C1C;
+      text-decoration-color: #F71C1C;
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  #aboutus{
+    h2{
+      font-size: 36px;
+    }
+    p{
+      font-size: 14px;
+    }
+    .read-more{
+      font-size: 12px;
+    }
+  }
+}
+
 /*    Template 1 Start     */
 #template1{
   .header{

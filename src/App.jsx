@@ -11,6 +11,7 @@ import Template1 from "./Assets/HcComponent/Template1";
 import Template2 from "./Assets/HcComponent/Template2";
 import Template3 from "./Assets/HcComponent/Template3";
 import PolicyPage from "./Assets/HcComponent/PolicyPage";
+import BlogPage from "./Assets/HcComponent/BlogPage";
 import FooterSection from "./Assets/HcComponent/FooterSection";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/contact-us" component={ContactPage} />
         <Route exact path="/support" component={SupportPage} />
         <Route exact path="/privacy-policy" component={PolicyPage} />
+        <Route exact path="/blog" component={BlogPage} />
         <Route exact path="/template1" component={Template1} />
         <Route exact path="/template2" component={Template2} />
         <Route exact path="/template3" component={Template3} />

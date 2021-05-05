@@ -46,7 +46,7 @@ const FooterSection = () =>{
                     <div className="col-6 col-lg-2 col-md-3 my-5">
                     <h4>Resources</h4>
                         <ul>
-                            <li><NavHashLink className="nav" to="/#">Blog</NavHashLink></li>
+                            <li><NavHashLink className="nav" to="/blog#">Blog</NavHashLink></li>
                             <li><NavHashLink className="nav" to="/support#">F.A.Q</NavHashLink></li>
                             <li><NavHashLink className="nav" to="/#testimonials">Testimonial</NavHashLink></li>
                             <li><NavHashLink className="nav" to="/#">Site map</NavHashLink></li>
