@@ -1,5 +1,4 @@
 import React from "react";
-import { NavHashLink } from 'react-router-hash-link';
 import backillustration from "../Image/backillustration.svg";
 import Blog from "../Image/blog-1.jpg";
 import Blog1 from "../Image/blog-2.jpg";
