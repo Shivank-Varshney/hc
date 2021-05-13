@@ -89,7 +89,7 @@ section{
 @media only screen and (max-width: 720px) {
   #navbar-section{
     .brand-logo{
-      height: 30px !important;
+      height: 28px !important;
     }
     .brand-logo{
       height: 80px;
@@ -105,14 +105,7 @@ section{
       font-size: 16px;
     }
   }
-}  
-@media only screen and (max-width: 320px) {
-  #navbar-section{
-    .brand-logo{
-      height: 50px;
-    }
-  }
-}
+} 
 /*    Navbar-Section End    */
 
 /*    Home-page Start    */
