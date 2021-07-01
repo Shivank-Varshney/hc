@@ -1,5 +1,4 @@
 import React from "react";
-import { NavHashLink } from 'react-router-hash-link';
 import Homebanner from "../Image/hcheaderillustration.svg";
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 
@@ -8,7 +7,7 @@ const Testimonial = (props) =>{
         <>
             <div className="testimonial">
                 <sup><FormatQuoteIcon /></sup><blockquote>{props.comment}</blockquote><sub><FormatQuoteIcon /></sub>
-                <p className="testimonial-author"><NavHashLink to="/">{props.name}</NavHashLink></p>
+                <p className="testimonial-author">{props.name}</p>
                 <img src={Homebanner} className="img-fluid mx-auto" alt="Client list" />
             </div>
         </>
@@ -18,19 +17,19 @@ const Testimonial = (props) =>{
 const Tdata = [
     {
         comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae est iure ullam eveniet aspernatur maiores possimus et omnis ut sint excepturi mollitia.",
-        name: "Lorem ipsum"
+        name: "Shivank Varshney"
     },
     {
         comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae est iure ullam eveniet aspernatur maiores possimus et omnis ut sint excepturi mollitia.",
-        name: "Lorem ipsum"
+        name: "Tarun Aggarwal"
     },
     {
         comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae est iure ullam eveniet aspernatur maiores possimus et omnis ut sint excepturi mollitia.",
-        name: "Lorem ipsum"
+        name: "Akash Vhotkar"
     },
     {
         comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae est iure ullam eveniet aspernatur maiores possimus et omnis ut sint excepturi mollitia.",
-        name: "Lorem ipsum"
+        name: "Rishikesh Mane"
     },
 ];
 

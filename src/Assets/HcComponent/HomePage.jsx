@@ -1,11 +1,8 @@
 import React from "react";
 import { NavHashLink } from 'react-router-hash-link';
-import Clients, {Cdata} from "./Clients";
 import TestimonialSection from "./TestimonialSection";
 import {Carouselcard, Cardata} from "./PortfolioPage";
 import ServiceSection from "./ServiceSection";
-// import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-// import GetAppIcon from '@material-ui/icons/GetApp';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import Homebanner from "../Image/hcheaderillustration.svg";
 import About from "../Image/hcaboutillustration.svg";
@@ -61,8 +58,6 @@ const HomePage = () =>{
                     <div className="col-lg-6 my-auto">  
                         <h1 className="header-heading">Where Your Imagination meets our Creativity</h1>
                         <p className="header-text py-4">As an <strong>IT service provider</strong> we believe in the power of online presence of a brand. We have a set of employees who are best in their respective fields and work with utmost dedication. We make sure that your experience with us is good enough to bring you back to us for your future projects.</p>
-                        {/* <button className="play-btn mr-4 mt-3"><PlayArrowIcon /> Video tour</button>
-                        <button className="download-btn"><GetAppIcon /> Download</button> */}
                     </div>
                     <div className="col-lg-6 mt-lg-0 mt-5">  
                        <img src={Homebanner} alt="it service provider, BEST IT Service Provider in Delhi, IT Company" className="img-fluid" />
@@ -178,26 +173,8 @@ const HomePage = () =>{
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-12 mx-auto mb-5">
+                    <div className="col-lg-12 mx-auto">
                         <TestimonialSection />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-12 my-5">
-                        <div className="clients-list mb-5">
-                        <Slider {...settings}>
-                                {
-                                    Cdata.map((val,index)=>{
-                                        return(
-                                            <Clients
-                                                key = {index}
-                                                imgsrc = {val.imgsrc}
-                                            />
-                                        );
-                                    })
-                                }
-                        </Slider>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -208,24 +185,24 @@ const HomePage = () =>{
 
             {/* Support section start */}
             <section className="container-fluid" id="card">
-                <div className="row p-md-5 py-5 mt-5">
+                <div className="row p-md-5 py-5">
                     <Card 
                         imgsrc = {Card1}
                         heading = "Get Support"
-                        text = "Let us know your doubts and we will provide our support in every manner. Call us or mail us your queries and we will reach out to you as soon as possible. We at HardCipher believe in providing full support to our customers."
-                        linkname = "Go to support"
+                        text = "Let us know your doubts and we will provide our support in every manner. Call us or mail us your queries..."
+                        link = "/support/#get-support"
                     />
                     <Card 
                         imgsrc = {Card2}
                         heading = "Our community"
-                        text = "We are a dedicated team of developers who puts in their heart and soul in providing 100% satisfaction to our clients. We believe in taking our clients onboard as we work through so they get what they want and are pleased to see the results."
-                        linkname = "Go to community"
+                        text = "We are a dedicated team of developers who puts in their heart and soul in providing 100% satisfaction..."
+                        link = "/support/#our-community"
                     />
                     <Card 
                         imgsrc = {Card3}
                         heading = "F.A.Q"
-                        text = "The questions you have in your mind related to our company and the services we provide have all been answered here for your better understanding."
-                        linkname = "Go to F.A.Q"
+                        text = "The questions you have in your mind related to our company and the services we provide have all been answered..."
+                        link = "/support/#faq"
                     />
                 </div>
             </section>
@@ -247,7 +224,7 @@ const Card = (props) =>{
                             <div className="card-body">
                                 <h5 className="card-title">{props.heading}</h5>
                                 <p className="card-text my-4">{props.text}</p>
-                                <NavHashLink to="/support#" className="mt-auto">{props.linkname} <ArrowRightAltIcon /></NavHashLink>
+                                <NavHashLink to={props.link} className="mt-auto">read more <ArrowRightAltIcon /></NavHashLink>
                             </div>
                         </div>
                     </div>

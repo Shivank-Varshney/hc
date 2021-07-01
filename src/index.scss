@@ -123,19 +123,6 @@ section{
     font-size: 18px;
     line-height: 30px;
   }
-  .play-btn{
-    color: white;
-    background-color: #69AA22;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 40px;
-    font-weight: 500;
-    font-size: 24px;
-  }
-  .download-btn{
-    @extend .play-btn;
-    background-color: #FCAF17;
-  }
 }
 @media only screen and (max-width: 540px) {
   #header{
@@ -145,18 +132,6 @@ section{
     }
     .header-text{
       font-size: 14px;
-    }
-    .play-btn{
-      padding: 8px 18px;
-      border-radius: 40px;
-      font-weight: 300;
-      font-size: 18px;
-    }
-    .download-btn{
-      padding: 8px 18px;
-      border-radius: 40px;
-      font-weight: 300;
-      font-size: 18px;
     }
   }
 }
@@ -344,21 +319,12 @@ section{
       color: #F71C1C;
       font-size: 30px;
     }
+    .testimonial-author{
+      color: #0056b3;
+      margin: 20px 0;
+    }
     .img-fluid{
       width: 100px;
-    }
-  }
-  .clients-list{
-    .rec.rec-arrow{
-      border: none;
-      outline: none;
-      box-shadow: none;
-    }
-    .rec.rec-arrow:hover{
-      background-color: #F71C1C;
-    }
-    .rec.rec-arrow:disabled {
-      visibility: hidden;
     }
   }
 }
@@ -377,11 +343,6 @@ section{
         font-size: 40px;
       }
     }
-    .clients-list{
-      .rec.rec-arrow{
-        font-size: 15px;
-      }
-    }
   }
 }
 
@@ -390,7 +351,6 @@ section{
   .card{
     padding: 30px 0 30px 10px;
     background-color: #F9F9F9;
-    min-height: 450px;
     img{
       width: 120px;
     }

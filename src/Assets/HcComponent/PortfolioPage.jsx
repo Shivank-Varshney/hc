@@ -66,7 +66,7 @@ const Card = (props) =>{
 const Carouselcard = (props) =>{
     return(
         <>
-            <div className="card">
+            <div className="card mx-2">
                 <NavHashLink to="/portfolio#" className="card-btn mb-4">
                     <img src={props.imgsrc} className="img-fluid" alt="demo template" />
                 </NavHashLink>

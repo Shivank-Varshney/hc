@@ -11,7 +11,7 @@ const SupportPage = () =>{
            <img src={backillustration} alt="backillustration" className="img-fluid backillustration" />
            <section className="container-fluid" id="support-page">
                 <div className="row">
-                    <div className="col-lg-9 my-5">
+                    <div className="col-lg-9 my-5" id="get-support">
                         <div className="support">
                             <div className="row">
                                 <div className="col-sm-4 text-center pb-5">
@@ -24,7 +24,7 @@ const SupportPage = () =>{
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-9 offset-md-3 my-5">
+                    <div className="col-lg-9 offset-md-3 my-5" id="our-community">
                         <div className="support">
                             <div className="row">
                                 <div className="col-sm-7 pb-5">
@@ -32,12 +32,12 @@ const SupportPage = () =>{
                                     <p>We are a dedicated team of developers who puts in their heart and soul in providing 100% satisfaction to our clients. We believe in taking our clients onboard as we work through so they get what they want and are pleased to see the results.</p>
                                 </div>
                                 <div className="col-sm-4 offset-1 text-center">
-                                    <img src={Img2} alt="get support" className="img-fluid" />
+                                    <img src={Img2} alt="our community" className="img-fluid" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-9 my-5">
+                    <div className="col-lg-9 my-5" id="faq">
                         <div className="support">
                             <div className="row">
                                 <div className="col-sm-4 text-center pb-5">
